@@ -963,8 +963,6 @@ Wire Wire Line
 Connection ~ 9250 4950
 Wire Wire Line
 	9750 3650 9600 3650
-Wire Wire Line
-	9600 3250 10300 3250
 $Comp
 L power:+12V #PWR017
 U 1 1 5E94B40A
@@ -1115,20 +1113,17 @@ Wire Wire Line
 	8350 4500 8750 4500
 Wire Wire Line
 	9050 4950 9250 4950
-Wire Wire Line
-	8100 3250 8900 3250
-Connection ~ 8100 3250
 NoConn ~ 1200 3700
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5E7FD258
-P 10500 3250
-F 0 "J2" H 10580 3242 50  0000 L CNN
-F 1 "Conn_01x02" H 10580 3151 50  0000 L CNN
-F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 10500 3250 50  0001 C CNN
-F 3 "~" H 10500 3250 50  0001 C CNN
-	1    10500 3250
-	1    0    0    -1  
+P 10500 3350
+F 0 "J2" H 10580 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 10580 3251 50  0000 L CNN
+F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 10500 3350 50  0001 C CNN
+F 3 "~" H 10500 3350 50  0001 C CNN
+	1    10500 3350
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J3
@@ -1139,7 +1134,7 @@ F 1 "Conn_01x03" H 1380 6201 50  0000 L CNN
 F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 1300 6250 50  0001 C CNN
 F 3 "~" H 1300 6250 50  0001 C CNN
 	1    1300 6250
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1700 6800 1700 7000
@@ -1172,4 +1167,23 @@ F 3 "" H 4400 5500 50  0001 C CNN
 	1    4400 5500
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	10300 3250 9900 3250
+Wire Wire Line
+	9900 3250 9900 3000
+Wire Wire Line
+	9900 3000 8650 3000
+Wire Wire Line
+	8650 3000 8650 3250
+Wire Wire Line
+	8650 3250 8900 3250
+Wire Wire Line
+	8100 3250 8100 2850
+Connection ~ 8100 3250
+Wire Wire Line
+	9750 2850 9750 3250
+Wire Wire Line
+	9750 3250 9600 3250
+Wire Wire Line
+	8100 2850 9750 2850
 $EndSCHEMATC
